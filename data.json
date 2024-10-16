@@ -1,0 +1,56 @@
+{
+    "user": {
+        "name": "JohnMark",
+        "studentId": "1",
+        "phone": "+1234567890",
+        "email": "johnmark@example.com",
+        "totalPoints": 500,
+        "pointsInKsh": 50,
+        "orderHistory": [
+            { "food": "Sandwich", "price": "70" },
+            { "food": "Pizza", "price": "150" },
+            { "food": "Rice", "price": "50" }
+        ],
+        "referralLink": "https://springsofolives.com/ref/johnmark",
+        "referrals": 3,
+        "rewardsEarned": "30 points"
+    },
+    "menu": [
+        {
+            "title": "Pizza",
+            "price": 300,
+            "image": "https://my-sketches-bucket.s3.eu-north-1.amazonaws.com/placeholders/1.png",
+            "rating": 3
+        },
+        {
+            "title": "Chips",
+            "price": 150,
+            "image": "https://my-sketches-bucket.s3.eu-north-1.amazonaws.com/placeholders/2.png",
+            "rating": 5
+        },
+        {
+            "title": "Rice",
+            "price": 50,
+            "image": "https://my-sketches-bucket.s3.eu-north-1.amazonaws.com/placeholders/3.png",
+            "rating": 5
+        },
+        {
+            "title": "Beef stew",
+            "price": 80,
+            "image": "https://my-sketches-bucket.s3.eu-north-1.amazonaws.com/placeholders/4.png",
+            "rating": 4
+        },
+        {
+            "title": "Chicken",
+            "price": 410,
+            "image": "https://my-sketches-bucket.s3.eu-north-1.amazonaws.com/placeholders/5.png",
+            "rating": 4
+        },
+        {
+            "title": "Sandwich",
+            "price": 70,
+            "image": "https://my-sketches-bucket.s3.eu-north-1.amazonaws.com/placeholders/6.png",
+            "rating": 5
+        }
+    ]
+}
