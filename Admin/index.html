@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springs of Olives - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Constant Navigation) -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>Springs of Olives</h2>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#menu-management">Menu Management</a></li>
+                <li><a href="#customer-management">Customer Management</a></li>
+                <li><a href="#feedback">Customer Feedback</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Admin Dashboard with Time Filters -->
+            <section id="dashboard" class="dashboard">
+                <h1>Admin Dashboard</h1>
+                <div class="filter-section">
+                    <label for="timeFilter">Filter by:</label>
+                    <select id="timeFilter">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </div>
+                <div class="dashboard-metrics">
+                    <div class="metric-card">
+                        <h3>Total Registered Customers</h3>
+                        <p id="totalCustomers">1250</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>New Customer Registrations</h3>
+                        <p id="newRegistrations">35</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Total Sales</h3>
+                        <p id="totalSales">$25,680</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Total Points Earned</h3>
+                        <p id="totalPoints">128,400</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Points Redeemed</h3>
+                        <p id="pointsRedeemed">56,700</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Referral Program Effectiveness</h3>
+                        <p id="referralEffectiveness">12%</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu Management -->
+            <section id="menu-management" class="menu-management">
+                <h2>Menu Management</h2>
+                <form class="menu-form">
+                    <label for="foodImage">Food Image:</label>
+                    <input type="file" id="foodImage" name="foodImage">
+                    <label for="foodTitle">Food Title:</label>
+                    <input type="text" id="foodTitle" name="foodTitle">
+                    <label for="foodPrice">Food Price:</label>
+                    <input type="text" id="foodPrice" name="foodPrice">
+                    <button type="submit">Add Menu Item</button>
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Menu items will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Customer Management -->
+            <section id="customer-management" class="customer-management">
+                <h2>Customer Management</h2>
+                <input type="text" id="customerSearch" placeholder="Search by Customer ID, Name, or Email">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Total Points</th>
+                            <th>Points in KSH</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Customer data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Customer Feedback Section -->
+            <section id="feedback" class="feedback">
+                <h2>Customer Feedback</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Email</th>
+                            <th>Feedback</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Feedback entries will be dynamically inserted here -->
+                        <tr>
+                            <td>John Doe</td>
+                            <td>johndoe@example.com</td>
+                            <td>Great service and fresh food!</td>
+                            <td>2024-10-21</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>janesmith@example.com</td>
+                            <td>Loved the variety in the menu!</td>
+                            <td>2024-10-20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
